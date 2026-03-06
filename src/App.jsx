@@ -8,11 +8,8 @@ import AppContext from './AppContext';
 import MainApp from './MainApp';
 import GlobalStyles from './theme/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/themes';
-
 function App() {
-
   const darkMode = useDarkMode(true);
-  
   return (
     <AppContext.Provider value={{ darkMode }}>
       <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
@@ -29,5 +26,4 @@ function App() {
     </AppContext.Provider>
   );
 }
-
 export default App;
