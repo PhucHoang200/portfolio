@@ -20,10 +20,12 @@ function App() {
       <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
         <GlobalStyles />
         <div className="App">
-          {/* Thêm basename để tự động khớp đường dẫn Local (/) và GitHub (/repo-name/) */}
-          <BrowserRouter basename={process.env.PUBLIC_URL}>
+          {/* Dùng HashRouter giúp không bao giờ bị lỗi 404 khi F5. 
+              Không cần dùng basename={process.env.PUBLIC_URL} với HashRouter.
+          */}
+          <Router>
             <MainApp />
-          </BrowserRouter>
+          </Router>
         </div>
       </ThemeProvider>
     </AppContext.Provider>
