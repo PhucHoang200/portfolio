@@ -10,11 +10,9 @@ import GlobalStyles from './theme/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/themes';
 
 function App() {
-  // Xóa hoặc comment dòng window.matchMedia = null để tránh lỗi crash hệ thống
-  // window.matchMedia = null; 
 
   const darkMode = useDarkMode(true);
-
+  
   return (
     <AppContext.Provider value={{ darkMode }}>
       <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
