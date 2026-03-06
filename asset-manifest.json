@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "https://PhucHoang200.github.io/portfolio/static/css/main.f693e082.css",
+    "main.js": "https://PhucHoang200.github.io/portfolio/static/js/main.92c361f3.js",
+    "static/js/124.1556c740.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/124.1556c740.chunk.js",
+    "static/css/56.38b2df9f.chunk.css": "https://PhucHoang200.github.io/portfolio/static/css/56.38b2df9f.chunk.css",
+    "static/js/56.c94ddc6f.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/56.c94ddc6f.chunk.js",
+    "static/css/353.fe9c079c.chunk.css": "https://PhucHoang200.github.io/portfolio/static/css/353.fe9c079c.chunk.css",
+    "static/js/353.56f471c8.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/353.56f471c8.chunk.js",
+    "static/js/660.26a53d6c.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/660.26a53d6c.chunk.js",
+    "static/js/57.4ffd1802.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/57.4ffd1802.chunk.js",
+    "static/js/697.35f57cc4.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/697.35f57cc4.chunk.js",
+    "static/js/449.82908272.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/449.82908272.chunk.js",
+    "static/js/453.703d9625.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/453.703d9625.chunk.js",
+    "static/js/819.cf4b6588.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/819.cf4b6588.chunk.js",
+    "static/js/712.dcc56c82.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/712.dcc56c82.chunk.js",
+    "index.html": "https://PhucHoang200.github.io/portfolio/index.html",
+    "main.f693e082.css.map": "https://PhucHoang200.github.io/portfolio/static/css/main.f693e082.css.map",
+    "main.92c361f3.js.map": "https://PhucHoang200.github.io/portfolio/static/js/main.92c361f3.js.map",
+    "124.1556c740.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/124.1556c740.chunk.js.map",
+    "56.38b2df9f.chunk.css.map": "https://PhucHoang200.github.io/portfolio/static/css/56.38b2df9f.chunk.css.map",
+    "56.c94ddc6f.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/56.c94ddc6f.chunk.js.map",
+    "353.fe9c079c.chunk.css.map": "https://PhucHoang200.github.io/portfolio/static/css/353.fe9c079c.chunk.css.map",
+    "353.56f471c8.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/353.56f471c8.chunk.js.map",
+    "660.26a53d6c.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/660.26a53d6c.chunk.js.map",
+    "57.4ffd1802.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/57.4ffd1802.chunk.js.map",
+    "697.35f57cc4.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/697.35f57cc4.chunk.js.map",
+    "449.82908272.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/449.82908272.chunk.js.map",
+    "453.703d9625.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/453.703d9625.chunk.js.map",
+    "819.cf4b6588.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/819.cf4b6588.chunk.js.map",
+    "712.dcc56c82.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/712.dcc56c82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f693e082.css",
+    "static/js/main.92c361f3.js"
+  ]
+}
