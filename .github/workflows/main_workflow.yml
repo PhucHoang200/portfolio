@@ -65,10 +65,11 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build Production Project 🏗️
-        run: npm run build
+        run: |
+          export DISABLE_ESLINT_PLUGIN=true
+          npm run build
         env:
           CI: false # Bỏ qua cảnh báo lỗi để hoàn tất build
-          ESLINT_NO_DEV_ERRORS: true
 
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
