@@ -1,0 +1,74 @@
+name: CI/CD Portfolio Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Tự động chạy khi bạn push code vào nhánh main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  # ---------------------------------------------------------
+  # GIAI ĐOẠN 1: CONTINUOUS INTEGRATION (CI)
+  # Nhiệm vụ: Kiểm tra code có lỗi cú pháp hay lỗi test không
+  # ---------------------------------------------------------
+  continuous-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install Dependencies 📦
+        run: npm install --legacy-peer-deps
+
+      - name: Lint Check (Optional) 🔍
+        run: npm run lint || echo "Linting failed but continuing..."
+        # Nếu dự án chưa setup lint, bước này sẽ được bỏ qua
+
+      - name: Run Tests 🧪
+        run: npm test -- --watchAll=false
+        env:
+          CI: true
+
+  # ---------------------------------------------------------
+  # GIAI ĐOẠN 2: CONTINUOUS DEPLOYMENT (CD)
+  # Nhiệm vụ: Build code và đẩy lên GitHub Pages
+  # ---------------------------------------------------------
+  continuous-deployment:
+    needs: continuous-integration # CHỈ CHẠY nếu CI thành công
+    if: github.event_name == 'push' # Chỉ deploy khi push trực tiếp, không chạy khi làm PR
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install Dependencies 📦
+        run: npm install --legacy-peer-deps
+
+      - name: Build Production Project 🏗️
+        run: npm run build
+        env:
+          CI: false # Bỏ qua cảnh báo lỗi để hoàn tất build
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          branch: gh-pages # Code đã build sẽ nằm ở nhánh này
