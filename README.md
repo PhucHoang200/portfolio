@@ -109,8 +109,4 @@ Mọi đóng góp nhằm cải thiện dự án đều được trân trọng.
 
 Phân phối dưới giấy phép MIT. Xem `LICENSE` để biết thêm thông tin.
 
-**Developed with ❤️ by [PhucHoang200**](https://www.google.com/search?q=https://github.com/PhucHoang200)
-
----
-
-**Bạn có muốn tôi bổ sung thêm phần hướng dẫn thay đổi thông tin cá nhân (như Bio, Skills, Social links) vào file README này không?**
+**Developed with ❤️ by [PhucHoang200**](https://github.com/PhucHoang200)
