@@ -66,8 +66,8 @@ jobs:
 
       - name: Build Production Project 🏗️
         run: |
-          export DISABLE_ESLINT_PLUGIN=true
-          npm run build
+          npm pkg set homepage="https://phuchoang200.github.io/portfolio"
+          DISABLE_ESLINT_PLUGIN=true npm run build
         env:
           CI: false # Bỏ qua cảnh báo lỗi để hoàn tất build
 
