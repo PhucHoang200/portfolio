@@ -1,11 +1,11 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import React, { useEffect, useState, useContext } from 'react';
-import { withRouter } from 'react-router';
+import { Navbar, Nav, Container } from "react-bootstrap";
+import React, { useEffect, useState, useContext } from "react";
+import { withRouter } from "react-router";
 // Import Link từ react-scroll để thay thế NavLink của router
-import { Link as ScrollLink } from 'react-scroll';
-import styled, { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
-import ThemeToggler from './ThemeToggler';
+import { Link as ScrollLink } from "react-scroll";
+import styled, { ThemeContext } from "styled-components";
+import endpoints from "../constants/endpoints";
+import ThemeToggler from "./ThemeToggler";
 
 const styles = {
   logoStyle: {
@@ -40,7 +40,7 @@ const InternalScrollLink = styled(ScrollLink)`
   &.active {
     color: ${(props) => props.theme.navbarTheme.linkActiveColor};
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 10%;
@@ -58,7 +58,7 @@ const NavBar = () => {
 
   useEffect(() => {
     fetch(endpoints.navbar, {
-      method: 'GET',
+      method: "GET",
     })
       .then((res) => res.json())
       .then((res) => setData(res))
@@ -80,21 +80,12 @@ const NavBar = () => {
           <ScrollLink
             to="home"
             smooth={true}
-            duration={500}
+            duration={300}
             onClick={() => setExpanded(false)}
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: "pointer" }}
           >
-            <Navbar.Brand>
-              <img
-                src={data?.logo?.source}
-                className="d-inline-block align-top"
-                alt="main logo"
-                style={
-                  data?.logo?.height && data?.logo?.width
-                    ? { height: data?.logo?.height, width: data?.logo?.width }
-                    : styles.logoStyle
-                }
-              />
+            <Navbar.Brand className="navbar-brand-text">
+              HOANG PHUC
             </Navbar.Brand>
           </ScrollLink>
         )}
@@ -108,7 +99,7 @@ const NavBar = () => {
             {data &&
               data.sections?.map((section) => {
                 // Xử lý link ngoài (ví dụ: dẫn đến Resume hoặc Blog)
-                if (section?.type === 'link') {
+                if (section?.type === "link") {
                   return (
                     <ExternalNavLink
                       key={section.title}
@@ -125,20 +116,24 @@ const NavBar = () => {
                 }
 
                 // Xử lý link nội bộ để cuộn (Smooth Scroll)
-                // path "/about" sẽ được chuyển thành id "about"
-                const targetId = section.href.replace('/', '');
-                
+                let targetId = section.href.replace("/", "");
+
+                // Nếu href là "/" thì targetId sẽ rỗng, ta phải gán nó là "home"
+                if (targetId === "") {
+                  targetId = "home";
+                }
+
                 return (
                   <InternalScrollLink
                     key={section.title}
-                    to={targetId}       // ID của section trong MainApp.jsx
-                    spy={true}          // Tự động nhận diện khi cuộn qua
-                    smooth={true}       // Hiệu ứng lướt mượt
-                    duration={500}      // Thời gian lướt (ms)
-                    offset={-70}        // Bù trừ cho độ cao của Navbar
+                    to={targetId} // Bây giờ nút Home sẽ có to="home"
+                    spy={true}
+                    smooth={"easeInOutQuart"}
+                    duration={300}
+                    offset={-70}
                     onClick={() => setExpanded(false)}
                     className="navbar__link"
-                    activeClass="active" // Class khi đang ở mục đó
+                    activeClass="active"
                     theme={theme}
                   >
                     {section.title}
@@ -153,7 +148,7 @@ const NavBar = () => {
   );
 };
 
-// Vẫn giữ withRouter để tránh lỗi nếu các thành phần khác yêu cầu, 
+// Vẫn giữ withRouter để tránh lỗi nếu các thành phần khác yêu cầu,
 // nhưng logic điều hướng chính giờ dựa trên ScrollLink.
 const NavBarWithRouter = withRouter(NavBar);
 export default NavBarWithRouter;

@@ -1,150 +1,114 @@
+/* --- Tối ưu hóa hệ thống --- */
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0;
+  background-color: #0f172a; /* Màu nền tối sâu hiện đại */
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
 
 .App {
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  height: 100vh;
-  flex-direction: row;
+  min-height: 100vh; /* Sửa từ height sang min-height để có thể cuộn */
+  display: block;    /* Sửa từ flex sang block để các trang xếp chồng */
 }
 
+/* --- NavBar Hiện đại (Kính mờ) --- */
 .navbar-custom {
-  font-size:large;
+  font-size: large;
+  background: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(12px); /* Hiệu ứng kính mờ */
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.navbar__link {
-  margin-left: 0.75em;
-  margin-right: 0.75em;
-  font-size: 1em;
+.navbar-brand-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
-  text-decoration: none;
-  letter-spacing: .1em;
-  text-indent: .3em;
-  border-bottom: 3px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand-text:hover {
+  transform: scale(1.05);
+}
+
+/* --- Menu Links --- */
+.navbar__link {
+  margin: 0 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none !important;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .navbar__link::after {
-  transition: all ease-in-out .2s;
-  background: none repeat scroll 0 0;
   content: "";
-  display: block;
-  margin-top: 2px;
-  height: 3px;
+  position: absolute;
   width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #00d2ff;
+  transition: width 0.3s ease;
 }
 
- .navbar__link:hover::after {
-  visibility: visible;
-  width: 40%;
-}
-
-.navbar__link--active::after {
-  transition: all ease-in-out .2s;
+.navbar__link:hover::after,
+.navbar__link.active::after {
   width: 100%;
 }
 
-.navbar__link--active:hover::after {
-  width: 100%;
-}
-
+/* --- Layout Sections --- */
 .MainApp {
-  margin-top: 8vh;
-  height: 90vh;
+  margin-top: 0; /* Để framer-motion xử lý khoảng cách */
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  width: 100%;
 }
 
-.section-content-container {
+section {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  scroll-margin-top: 70px; /* Tránh bị NavBar che mất tiêu đề */
 }
 
-.Typewriter {
-  display: inline-block;
+#home {
+  scroll-margin-top: 0;
+  padding-top: 0;
+}
+
+/* --- Typography & Elements --- */
+.header {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Typewriter__wrapper {
-  font-size: xx-large;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00d2ff;
 }
 
-.Typewriter__cursor {
-  font-size: xx-large;
-  font-weight: bold;
-}
-
-section.timeline-card-content {
-  justify-content: center;
-}
-
-section.timeline-card-content p.card-title {
-  font-size: 1.5em;
-  margin-top: 25px;
-}
-
-section.timeline-card-content p.card-sub-title {
-  font-size: 1.25em;
-  margin-top: 10px;
-}
-
-section.timeline-card-content div.card-description > p {
-  font-size: 1.1em;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-.social {
-  position: relative;
-  margin-top: 60px;
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-  .navbar__link {
-    margin-left: 0.4em;
-    margin-right: 0.4em;
-    font-size: 0.9em;
-    cursor: pointer;
-    letter-spacing: .1em;
-    text-indent: .2em;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-
-  .navbar__link::after {
-    background: none;
-    content: "";
-    display: none;
-    margin-top: 0;
-    height: 0;
-    width: 0;
-  }
-
-  .navbar__link--active::after {
-    width: 0;
-  }
-  
-  .navbar__link--active:hover::after {
-    width: 0;
-  }
-
-  .navbar__link:hover::after {
-    width: 0;
-  }
+  .header { font-size: 2.5rem; }
+  .Typewriter__wrapper { font-size: 1.8rem; }
+  .navbar__link { margin: 0.5rem 0; }
 }
-
-.header {
-  font-size: 3em;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-

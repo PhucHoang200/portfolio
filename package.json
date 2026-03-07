@@ -9,6 +9,7 @@
     "ajv": "^8.18.0",
     "ajv-keywords": "^5.1.0",
     "bootstrap": "^5.1.1",
+    "framer-motion": "^6.5.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.0",
