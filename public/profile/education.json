@@ -1,19 +1,22 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
+            "title": "September 2022 - Present",
+            "cardTitle": "Bachelor of Information Technology",
+            "cardSubtitle":"University of Transport and Communications - Campus in Ho Chi Minh City, Ho Chi Minh City",
+            "cardDetailedText": "CGPA - Updating",
             "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+                "src": ""
             }
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "June 2022",
+            "cardTitle": "High School Diploma",
+            "cardSubtitle":"Vo Minh Duc High School, Ho Chi Minh City",
+            "cardDetailedText": "Marks - 8.0",
+            "icon" : {
+                "src": ""
+            }
         }
     ]
 }
