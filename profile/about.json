@@ -1,5 +1,4 @@
 {
-    "about": " This is where you can describe about **yourself**. The more you describe about yourself, the better it is!\n\n\nExtra Information about you, like hobbies and your goals.\nExample Paragraph: I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs.",
-    "imageSource": "images/about/profile.png"
-    
+  "about": "I am a final-year Information Technology student passionate about mobile application development with Flutter. I enjoy building practical applications that combine clean UI with efficient backend integration.\n\nThrough personal and team projects, I have developed Flutter apps integrated with backend services such as ASP.NET Core, Django, and FastAPI. I have hands-on experience with state management, REST API integration, database design, and modern development tools like Git and CI/CD.\n\nI am passionate about writing clean, maintainable code and continuously improving my problem-solving skills. My goal is to become a professional Mobile Developer and eventually grow into a Fullstack Mobile Developer capable of building complete mobile systems from client to server.",
+  "imageSource": "images/about/profile.jpg"
 }
