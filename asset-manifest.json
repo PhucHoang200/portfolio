@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "https://PhucHoang200.github.io/portfolio/static/css/main.6b2ef00c.css",
-    "main.js": "https://PhucHoang200.github.io/portfolio/static/js/main.678766ba.js",
+    "main.css": "https://PhucHoang200.github.io/portfolio/static/css/main.5cf8475d.css",
+    "main.js": "https://PhucHoang200.github.io/portfolio/static/js/main.265c625f.js",
     "static/js/124.3c936c6a.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/124.3c936c6a.chunk.js",
+    "static/js/740.593c8674.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/740.593c8674.chunk.js",
     "static/css/56.38b2df9f.chunk.css": "https://PhucHoang200.github.io/portfolio/static/css/56.38b2df9f.chunk.css",
     "static/js/56.bf23f44b.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/56.bf23f44b.chunk.js",
     "static/css/353.ab71f309.chunk.css": "https://PhucHoang200.github.io/portfolio/static/css/353.ab71f309.chunk.css",
@@ -15,9 +16,10 @@
     "static/js/819.7c443e13.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/819.7c443e13.chunk.js",
     "static/js/712.a2f2e521.chunk.js": "https://PhucHoang200.github.io/portfolio/static/js/712.a2f2e521.chunk.js",
     "index.html": "https://PhucHoang200.github.io/portfolio/index.html",
-    "main.6b2ef00c.css.map": "https://PhucHoang200.github.io/portfolio/static/css/main.6b2ef00c.css.map",
-    "main.678766ba.js.map": "https://PhucHoang200.github.io/portfolio/static/js/main.678766ba.js.map",
+    "main.5cf8475d.css.map": "https://PhucHoang200.github.io/portfolio/static/css/main.5cf8475d.css.map",
+    "main.265c625f.js.map": "https://PhucHoang200.github.io/portfolio/static/js/main.265c625f.js.map",
     "124.3c936c6a.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/124.3c936c6a.chunk.js.map",
+    "740.593c8674.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/740.593c8674.chunk.js.map",
     "56.38b2df9f.chunk.css.map": "https://PhucHoang200.github.io/portfolio/static/css/56.38b2df9f.chunk.css.map",
     "56.bf23f44b.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/56.bf23f44b.chunk.js.map",
     "353.ab71f309.chunk.css.map": "https://PhucHoang200.github.io/portfolio/static/css/353.ab71f309.chunk.css.map",
@@ -31,7 +33,7 @@
     "712.a2f2e521.chunk.js.map": "https://PhucHoang200.github.io/portfolio/static/js/712.a2f2e521.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b2ef00c.css",
-    "static/js/main.678766ba.js"
+    "static/css/main.5cf8475d.css",
+    "static/js/main.265c625f.js"
   ]
 }
