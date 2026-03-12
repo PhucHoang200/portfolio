@@ -1,37 +1,37 @@
 {
-    "experiences": [
-        {
-            "title": "Front-end Developer",
-            "subtitle": "Personal Portfolio Project",
-            "workType": "Personal Project",
-            "workDescription": [
-                "Designed and developed a high-performance personal portfolio using **React.js** and **Framer Motion** for modern UI/UX effects.",
-                "Optimized web performance and SEO, achieving a Lighthouse score of over **90/100**.",
-                "Integrated advanced interactive features including a **Cursor Trail** effect and **Glassmorphism** layouts to enhance user engagement."
-            ],
-            "dateText": "01/2026 – Present"
-        },
-        {
-            "title": "Full-stack Web Developer",
-            "subtitle": "E-commerce Platform (Academic Project)",
-            "workType": "Academic Project",
-            "workDescription": [
-                "Architected a full-featured online store with integrated Shopping Cart, Secure Checkout, and Order Management systems.",
-                "Developed a robust Backend using **Node.js** and **Express**, managing a **MongoDB** database for over **500** product SKUs.",
-                "Implemented a fully responsive design ensuring a seamless user experience across all mobile and desktop devices."
-            ],
-            "dateText": "09/2025 – 12/2025"
-        },
-        {
-            "title": "Technical Contributor",
-            "subtitle": "University IT Club",
-            "workType": "Volunteer",
-            "workDescription": [
-                "Coordinated and provided technical support for programming competitions involving over **200** participants.",
-                "Developed a membership registration module for the club's official website using **React-Bootstrap** and Firebase.",
-                "Collaborated with a team of 5 developers to maintain and update internal web tools."
-            ],
-            "dateText": "2024 – 2025"
-        }
-    ]
+  "experiences": [
+    {
+      "title": "Full-stack Mobile Developer",
+      "subtitle": "Online Car Marketplace Application",
+      "workType": "Personal Project",
+      "workDescription": [
+        "Designed and developed a comprehensive mobile marketplace using **Flutter** and **Provider** for scalable state management.",
+        "Integrated **Firebase Authentication**, **Firestore**, and **Cloudinary** for secure user sessions and high-performance image hosting.",
+        "Established an automated **CI/CD pipeline** via **GitHub Actions** (Analyze, Test, Build), significantly reducing deployment errors and improving code reliability."
+      ],
+      "dateText": "11/2025 – 01/2026"
+    },
+    {
+      "title": "Team Leader - Full-stack Developer",
+      "subtitle": "Stylo – AI-Powered Fashion Management",
+      "workType": "Team Project",
+      "workDescription": [
+        "Architected an end-to-end system integrating a **Flutter** mobile app with **ASP.NET Core Web API** and **SQL Server**.",
+        "Engineered and deployed a **TF-IDF based recommendation system** using **FastAPI** to provide personalized fashion suggestions.",
+        "Led the development team through effective task delegation, milestone management, and rigorous **code reviews** to ensure project quality."
+      ],
+      "dateText": "10/2025 – 01/2026"
+    },
+    {
+      "title": "Full-stack Developer",
+      "subtitle": "BookStore – Desktop Management System",
+      "workType": "Personal Project",
+      "workDescription": [
+        "Designed a robust **3-layer architecture** (GUI, BUS, DAL) using **WinForms (.NET)** to manage complex inventory and sales operations.",
+        "Implemented automated business logic for order processing, revenue tracking, and stock management with advanced filtering.",
+        "Developed professional reporting modules with **PDF export** functionality for invoices and analytics using **Spire.Office**."
+      ],
+      "dateText": "09/2025 – 11/2025"
+    }
+  ]
 }
