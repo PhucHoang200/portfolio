@@ -1,33 +1,37 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "title": "Front-end Developer",
+            "subtitle": "Personal Portfolio Project",
+            "workType": "Personal Project",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Designed and developed a high-performance personal portfolio using **React.js** and **Framer Motion** for modern UI/UX effects.",
+                "Optimized web performance and SEO, achieving a Lighthouse score of over **90/100**.",
+                "Integrated advanced interactive features including a **Cursor Trail** effect and **Glassmorphism** layouts to enhance user engagement."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "01/2026 – Present"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
+            "title": "Full-stack Web Developer",
+            "subtitle": "E-commerce Platform (Academic Project)",
+            "workType": "Academic Project",
             "workDescription": [
-                "Worked on abc."
+                "Architected a full-featured online store with integrated Shopping Cart, Secure Checkout, and Order Management systems.",
+                "Developed a robust Backend using **Node.js** and **Express**, managing a **MongoDB** database for over **500** product SKUs.",
+                "Implemented a fully responsive design ensuring a seamless user experience across all mobile and desktop devices."
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": "09/2025 – 12/2025"
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
+            "title": "Technical Contributor",
+            "subtitle": "University IT Club",
+            "workType": "Volunteer",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Coordinated and provided technical support for programming competitions involving over **200** participants.",
+                "Developed a membership registration module for the club's official website using **React-Bootstrap** and Firebase.",
+                "Collaborated with a team of 5 developers to maintain and update internal web tools."
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "2024 – 2025"
         }
     ]
 }

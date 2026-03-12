@@ -112,3 +112,77 @@ section {
   .Typewriter__wrapper { font-size: 1.8rem; }
   .navbar__link { margin: 0.5rem 0; }
 }
+
+/* --- Contact Section Styles --- */
+.contact-section {
+  padding: 80px 0;
+  width: 100%;
+}
+
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.info-item .icon {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 210, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+/* --- Modern Form Controls --- */
+.contact-form-wrapper {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.modern-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  padding: 15px 20px !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+}
+
+.modern-input:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #00d2ff !important;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.3) !important;
+  outline: none;
+}
+
+.btn-modern {
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5) !important;
+  border: none !important;
+  padding: 15px 35px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  transition: all 0.3s ease !important;
+  width: 100%;
+}
+
+.btn-modern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4) !important;
+}
