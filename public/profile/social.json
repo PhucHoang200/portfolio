@@ -1,16 +1,16 @@
 {
-    "social": [
-        {
-            "network" : "linkedin",
-            "href": "www.linkedin.com/in/phuc-hoang-a57373370"
-        },
-        {
-            "network" : "github",
-            "href": "https://github.com/PhucHoang200"
-        },
-        {
-            "network" : "email",
-            "href": "phucphuc2004444@gmail.com"
-        }
-    ]
+  "social": [
+    {
+      "network": "linkedin",
+      "href": "https://www.linkedin.com/in/phuc-hoang-a57373370/"
+    },
+    {
+      "network": "github",
+      "href": "https://github.com/PhucHoang200"
+    },
+    {
+      "network": "email",
+      "href": "phucphuc2004444@gmail.com"
+    }
+  ]
 }
