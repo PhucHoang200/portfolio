@@ -186,3 +186,106 @@ section {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4) !important;
 }
+
+.contact-label {
+  color: #00d2ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* --- Contact Information Enhancement --- */
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.info-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff, #00d2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.info-subtitle {
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+.info-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.info-box:hover {
+  background: rgba(0, 210, 255, 0.1);
+  border-color: rgba(0, 210, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.info-icon-wrapper {
+  font-size: 1.8rem;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 210, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-right: 20px;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00d2ff;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: #f1f5f9;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Label của Form */
+.contact-label {
+  color: #00d2ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
